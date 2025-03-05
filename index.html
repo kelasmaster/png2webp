@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PNG/JPG to WebP Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PNG/JPG to WebP Converter</h1>
+    <div class="upload-section">
+      <label for="fileInput" class="upload-btn">Upload Image</label>
+      <input type="file" id="fileInput" accept="image/png, image/jpeg" hidden>
+    </div>
+    <div class="preview-section">
+      <h2>Preview</h2>
+      <div class="image-preview">
+        <img id="uploadedImage" src="#" alt="Uploaded Image" style="display: none;">
+      </div>
+      <button id="convertBtn" disabled>Convert to WebP</button>
+    </div>
+    <div class="download-section">
+      <a id="downloadLink" style="display: none;">Download WebP</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
